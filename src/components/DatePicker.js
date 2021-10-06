@@ -48,7 +48,7 @@ export default function DatePicker({endDate, selectDate, getSelectedDay, color, 
             end = i === differenceInMonths(lastDate, startDate) ? Number(format(lastDate, "d")) : Number(format(lastDayOfMonth(month), "d"));
             for (let j = start; j < end; j++) {
                 days.push(
-                    <div id={`${getId(addDays(startDate, j))}`}
+                    <div id={`${getId(addDays(month, j))}`}
                          className={styles.dateDayItem}
                          style={getStyles(addDays(month, j))}
                          key={addDays(month, j)}
