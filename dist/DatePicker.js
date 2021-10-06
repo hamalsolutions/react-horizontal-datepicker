@@ -61,7 +61,7 @@ export default function DatePicker({
 
       for (let j = start; j < end; j++) {
         days.push( /*#__PURE__*/React.createElement("div", {
-          id: `${getId(addDays(startDate, j))}`,
+          id: `${getId(addDays(month, j))}`,
           className: styles.dateDayItem,
           style: getStyles(addDays(month, j)),
           key: addDays(month, j),
