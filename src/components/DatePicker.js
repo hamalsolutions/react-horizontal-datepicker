@@ -86,6 +86,7 @@ export default function DatePicker({endDate, selectDate, getSelectedDay, color, 
     };
 
     useEffect(() => {
+        console.log("Testing comment");
         if (getSelectedDay) {
             if (selectDate) {
                 getSelectedDay(selectDate);
